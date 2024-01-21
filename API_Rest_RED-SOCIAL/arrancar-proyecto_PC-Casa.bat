@@ -1,0 +1,2 @@
+start cmd.exe /k "D: && cd D:\Programacion\MongoDB\bin && mongod.exe --dbpath D:\Programacion\Cursos\APIs-RESTful-NodeJS\API_Rest_NodeJS\API_Rest_RED-SOCIAL\database\DB_Mongo"
+start cmd.exe /K "D: && cd D:\Programacion\Cursos\APIs-RESTful-NodeJS\API_Rest_NodeJS\API_Rest_RED-SOCIAL && npm start"
