@@ -47,7 +47,6 @@ const register = (req, res) => {
 
             // Guardar usuario en la base de datos
             const userStored = user_to_save.save();
-
             if (!userStored) return res.status(500).json({ status: "error", message: "Error al guardar el usuario" });
 
             // Devolver el resultado    
@@ -62,8 +61,36 @@ const register = (req, res) => {
         })
 }
 
+// Login
+const login = (req, res) => {
+
+    // Recoger parámetros body
+    let params = req.body;
+    if (!params.email || !params.password) return res.status(400).send({status: "error", message: "faltan datos por enviar"});
+
+    // Buscar en la base de datos si existe
+    User
+    .findOne({email: params.email})
+    .then((users) => {
+        if (!users) return res.status(404).send({status: "error", message: "No existe el usuario"});
+
+        
+    })
+    .catch((error) => {
+        return res.status(404).send({status: "error", message: "No existe el usuario"});
+    })
+
+    // Comprobar su contraseña
+
+    // Devolver token
+
+    // Datos datos del usuario
+    return res.status(200).json({status: "success", message: "Acción de login"});
+}
+
 // Exportar acciones
 module.exports = {
     pruebaUser,
-    register
+    register,
+    login
 }
