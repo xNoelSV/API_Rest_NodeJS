@@ -17,7 +17,7 @@ Este repositorio contiene tres APIs diferentes desarrolladas en NodeJS, cada una
 
 - **NodeJS:** Todas las APIs están desarrolladas utilizando NodeJS, un entorno de ejecución de JavaScript del lado del servidor.
 - **Express:** Se utiliza el framework Express para simplificar el desarrollo de las APIs y gestionar las rutas y solicitudes HTTP.
-- **Base de Datos:** Cada API utiliza una base de datos para almacenar y gestionar los datos. Se pueden utilizar bases de datos como MongoDB, MySQL, PostgreSQL, etc., dependiendo de los requisitos del proyecto.
+- **Base de Datos:** Cada API utiliza una base de datos para almacenar y gestionar los datos. MongoDB es la base de datos preferida para susodichos proyectos.
 - **Documentación de la API:** Cada API incluye una documentación detallada que describe los puntos finales disponibles, los parámetros de solicitud, las respuestas esperadas y ejemplos de uso.
 
 ## Requisitos
@@ -33,7 +33,7 @@ Este repositorio contiene tres APIs diferentes desarrolladas en NodeJS, cada una
     git clone https://github.com/xNoelSV/API_Rest_NodeJS.git
     ```
 
-2. Navega a la carpeta de la API que desees utilizar (blog-api, social-api, spotify-api).
+2. Navega a la carpeta de la API que desees utilizar (API_Rest_BLOG, API_Rest_RED-SOCIAL, API_Rest_APLICACION-MUSICA).
 
 3. Instala las dependencias utilizando npm:
 
@@ -67,4 +67,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 ---
 
-¡Gracias por utilizar nuestras APIs! Esperamos que sean útiles para tus proyectos. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros. ¡Disfruta desarrollando!
+¡Gracias por utilizar mis APIs! Espero que sean útiles para tus proyectos. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo. ¡Disfruta desarrollando!
