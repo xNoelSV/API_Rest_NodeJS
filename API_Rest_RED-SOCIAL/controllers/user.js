@@ -1,11 +1,17 @@
-// Importar dependencias y módulos
-const User = require("../models/user");
+// Importar dependencias y modulos
 const bcrypt = require("bcrypt");
+
+// Importar modelos
+const User = require("../models/user");
+
+// Importar servicios
+const jwt = require("../services/jwt")
 
 // Acciones de prueba
 const pruebaUser = (req, res) => {
     return res.status(200).send({
-        mensaje: "Mensaje enviado desde: Controllers/user.js"
+        mensaje: "Mensaje enviado desde: Controllers/user.js",
+        user: req.user
     });
 }
 
@@ -66,26 +72,38 @@ const login = (req, res) => {
 
     // Recoger parámetros body
     let params = req.body;
-    if (!params.email || !params.password) return res.status(400).send({status: "error", message: "faltan datos por enviar"});
+    if (!params.email || !params.password) return res.status(400).send({ status: "error", message: "faltan datos por enviar" });
 
-    // Buscar en la base de datos si existe
+    // Buscar en la base de datos si existe el usuario
     User
-    .findOne({email: params.email})
-    .then((users) => {
-        if (!users) return res.status(404).send({status: "error", message: "No existe el usuario"});
+        .findOne({ email: params.email })
+        //.select({ "password": 0 }) Select para eliminar contraseña de la consulta
+        .exec()
+        .then((user) => {
+            if (!user) return res.status(404).send({ status: "error", message: "No existe el usuario" });
 
-        
-    })
-    .catch((error) => {
-        return res.status(404).send({status: "error", message: "No existe el usuario"});
-    })
+            // Comprobar contraseña
+            let pwd = bcrypt.compareSync(params.password, user.password)
+            if (!pwd) return res.status(400).send({ status: "error", message: "No te has identificado correctamente" })
 
-    // Comprobar su contraseña
+            // Devolver token
+            const token = jwt.createToken(user);
 
-    // Devolver token
-
-    // Datos datos del usuario
-    return res.status(200).json({status: "success", message: "Acción de login"});
+            // Datos datos del usuario
+            return res.status(200).json({ 
+                status: "success", 
+                message: "Te has identificado correctamente", 
+                user: { // Eliminar password del objeto
+                    id: user._id,
+                    name: user.name,
+                    nick: user.nick
+                },
+                token
+            });
+        })
+        .catch((error) => {
+            return res.status(404).send({ status: "error", message: "No existe el usuario", sysMessage: error.toString() });
+        });
 }
 
 // Exportar acciones
