@@ -1,5 +1,6 @@
 // Importar dependencias y modulos
 const bcrypt = require("bcrypt");
+const mongoosePagination = require("mongoose-pagination");
 
 // Importar modelos
 const User = require("../models/user");
@@ -90,9 +91,9 @@ const login = (req, res) => {
             const token = jwt.createToken(user);
 
             // Datos datos del usuario
-            return res.status(200).json({ 
-                status: "success", 
-                message: "Te has identificado correctamente", 
+            return res.status(200).json({
+                status: "success",
+                message: "Te has identificado correctamente",
                 user: { // Eliminar password del objeto
                     id: user._id,
                     name: user.name,
@@ -106,9 +107,59 @@ const login = (req, res) => {
         });
 }
 
+// Perfil
+const profile = (req, res) => {
+    // Recibir el parámetro del ID del usuario por la URL
+    const id = req.params.id;
+
+    // Consulta para sacar los datos del usuario
+    User
+        .findById(id)
+        .select({ password: 0, role: 0 })
+        .exec()
+        .then((userProfile) => {
+
+            // Comprueba si existe el usuario
+            if (!userProfile) return res.status(404).send({ status: "error", message: "Usuario no existente" })
+
+            // Devolver el resultado
+            return res.status(200).send({ status: "success", user: userProfile })
+
+        })
+        .catch((error) => {
+            return res.status(500).send({ status: "error", message: "Error en la consulta", sysMessage: error.toString() })
+        })
+}
+
+// Página listado de usuarios
+const list = (req, res) => {
+    // Controlar en que página estamos
+    let page = 1;
+    if (req.params.page) page = req.params.page;
+    page = parseInt(page);
+
+    // Consulta con mongoose pagination
+    let itemsPerPage = 5;
+    User
+        .find()
+        .sort("_id")
+        .paginate(page, itemsPerPage)
+        .then((users) => {
+            if (!users) return res.status(404).send({ status: "error", message: "No hay usuarios disponibles" });
+
+            // Devolver resultado (posteriormente info de follows)
+            return res.status(200).send({ status: "success", users, page, itemsPerPage, total: users.length, pages: false})
+        })
+        .catch((error) => {
+            return res.status(500).send({ status: "error", message: "Error en la consulta", sysMessage: error.toString() })
+        })
+}
+
 // Exportar acciones
 module.exports = {
     pruebaUser,
     register,
-    login
+    login,
+    profile,
+    list
 }
