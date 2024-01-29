@@ -132,7 +132,7 @@ const profile = (req, res) => {
 }
 
 // Página listado de usuarios
-const list = (req, res) => {
+const list = async (req, res) => {
     // Controlar en que página estamos
     let page = 1;
     if (req.params.page) page = req.params.page;
@@ -140,6 +140,7 @@ const list = (req, res) => {
 
     // Consulta con mongoose pagination
     let itemsPerPage = 5;
+    let total = await User.countDocuments({}).exec();
     User
         .find()
         .sort("_id")
@@ -148,7 +149,7 @@ const list = (req, res) => {
             if (!users) return res.status(404).send({ status: "error", message: "No hay usuarios disponibles" });
 
             // Devolver resultado (posteriormente info de follows)
-            return res.status(200).send({ status: "success", users, page, itemsPerPage, total: users.length, pages: false})
+            return res.status(200).send({ status: "success", users, itemsPerPage, totalItems: total, page, pages: Math.ceil(total/itemsPerPage) })
         })
         .catch((error) => {
             return res.status(500).send({ status: "error", message: "Error en la consulta", sysMessage: error.toString() })
