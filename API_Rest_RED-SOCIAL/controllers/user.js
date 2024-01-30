@@ -1,6 +1,8 @@
 // Importar dependencias y modulos
 const bcrypt = require("bcrypt");
 const mongoosePagination = require("mongoose-pagination");
+const fs = require("fs");
+const path = require("path");
 
 // Importar modelos
 const User = require("../models/user");
@@ -192,19 +194,78 @@ const update = (req, res) => {
 
             // Buscar y actualizar
             User
-            .findByIdAndUpdate(userIdentity.id, userToUpdate, {new: true})
-            .select({password: 0})
-            .exec()
-            .then((userUpdated) => {
-                if (!userToUpdate) return res.status(400).send({ status: "error", sysMessage: error.toString() });
+                .findByIdAndUpdate(userIdentity.id, userToUpdate, { new: true })
+                .select({ password: 0 })
+                .exec()
+                .then((userUpdated) => {
+                    if (!userToUpdate) return res.status(400).send({ status: "error", sysMessage: error.toString() });
 
-                return res.status(200).send({ status: "success", user: userUpdated });
-            })
-            .catch((error) => {
-                return res.status(400).send({ status: "error", sysMessage: error.toString() });
-            })
+                    return res.status(200).send({ status: "success", user: userUpdated });
+                })
+                .catch((error) => {
+                    return res.status(400).send({ status: "error", sysMessage: error.toString() });
+                })
         });
 
+}
+
+// Subir archivos
+const upload = (req, res) => {
+    // Recoger el fichero de imagen y comprobar que existe
+    if (!req.file) {
+        return res.status(404).send({
+            status: "error",
+            message: "Petición no incluye imagen"
+        });
+    }
+
+    // Conseguir el nombre del archivo
+    let image = req.file.originalname;
+
+    // Sacar la extension del archivo
+    const imageSplit = image.split("\.");
+    const extension = imageSplit[1];
+
+    // Comprobar extension
+    if (extension != "png" && extension != "jpg" && extension != "jpeg" && extension != "gif") {
+
+        // Borrar archivo subido
+        const filePath = req.file.path;
+        const fileDeleted = fs.unlinkSync(filePath);
+
+        // Devolver respuesta negativa
+        return res.status(400).send({ status: "error", message: "Extensión del fichero invalida" });
+    }
+
+    // Si es correcta, guardar imagen en la base de datos
+    User
+        .findByIdAndUpdate(req.user.id, { image: req.file.filename }, { new: true })
+        .then((userUpdated) => {
+            if (!userUpdated) return res.status(500).send({ status: "error", sysMessage: error.toString() });
+
+            // Devolver respuesta
+            return res.status(200).send({ status: "success", user: userUpdated, file: req.file });
+        })
+        .catch((error) => {
+            return res.status(500).send({ status: "error", sysMessage: error.toString() });
+        });
+}
+
+// Sacar avatar
+const avatar = (req, res) => {
+    // Sacar el parametro de la URL
+    const file = req.params.file;
+
+    // Montar el path real de la imagen
+    const filePath = "./uploads/avatars/" + file;
+
+    // Comprobar que existe
+    fs.stat(filePath, (error, exists) => {
+        if (!exists) return res.status(404).send({ status: "error", message: "No existe la imagen" });
+        
+        // Devolver un file
+        return res.sendFile(path.resolve(filePath));
+    });
 }
 
 // Exportar acciones
@@ -214,5 +275,7 @@ module.exports = {
     login,
     profile,
     list,
-    update
+    update,
+    upload,
+    avatar
 }
