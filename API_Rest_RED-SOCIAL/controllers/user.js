@@ -149,11 +149,62 @@ const list = async (req, res) => {
             if (!users) return res.status(404).send({ status: "error", message: "No hay usuarios disponibles" });
 
             // Devolver resultado (posteriormente info de follows)
-            return res.status(200).send({ status: "success", users, itemsPerPage, totalItems: total, page, pages: Math.ceil(total/itemsPerPage) })
+            return res.status(200).send({ status: "success", users, itemsPerPage, totalItems: total, page, pages: Math.ceil(total / itemsPerPage) })
         })
         .catch((error) => {
             return res.status(500).send({ status: "error", message: "Error en la consulta", sysMessage: error.toString() })
         })
+}
+
+// Actualizar perfil de usuario
+const update = (req, res) => {
+    // Recoger info del usuario a actualizar
+    let userIdentity = req.user;
+    let userToUpdate = req.body;
+
+    // Eliminar campos sobrantes
+    delete userToUpdate.iat;
+    delete userToUpdate.exp;
+    delete userToUpdate.role;
+    delete userToUpdate.image;
+
+    // Control de usuarios duplicados
+    User
+        .find({
+            $or: [
+                { email: userToUpdate.email.toLowerCase() },
+                { nick: userToUpdate.nick.toLowerCase() }
+            ]
+        })
+        .then(async (users) => {
+            // Comprobar que el usuario del token ya existe en la base de datos
+            let userIsset = false;
+            users.forEach(user => {
+                if (user && user._id != userIdentity._id) userIsset = true;
+            });
+            if (userIsset) return res.status(200).json({ status: "success", message: "El usuario ya existe" });
+
+            // Cifrar la contraseña (Si me llega)
+            if (userToUpdate.password) {
+                let pwd = await bcrypt.hash(userToUpdate.password, 10);
+                userToUpdate.password = pwd;
+            }
+
+            // Buscar y actualizar
+            User
+            .findByIdAndUpdate(userIdentity.id, userToUpdate, {new: true})
+            .select({password: 0})
+            .exec()
+            .then((userUpdated) => {
+                if (!userToUpdate) return res.status(400).send({ status: "error", sysMessage: error.toString() });
+
+                return res.status(200).send({ status: "success", user: userUpdated });
+            })
+            .catch((error) => {
+                return res.status(400).send({ status: "error", sysMessage: error.toString() });
+            })
+        });
+
 }
 
 // Exportar acciones
@@ -162,5 +213,6 @@ module.exports = {
     register,
     login,
     profile,
-    list
+    list,
+    update
 }
