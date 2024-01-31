@@ -194,7 +194,7 @@ const update = (req, res) => {
 
             // Buscar y actualizar
             User
-                .findByIdAndUpdate(userIdentity.id, userToUpdate, { new: true })
+                .findByIdAndUpdate({ _id: userIdentity.id }, userToUpdate, { new: true })
                 .select({ password: 0 })
                 .exec()
                 .then((userUpdated) => {
@@ -239,8 +239,8 @@ const upload = (req, res) => {
 
     // Si es correcta, guardar imagen en la base de datos
     User
-        .findByIdAndUpdate(req.user.id, { image: req.file.filename }, { new: true })
-        .then((userUpdated) => {
+        .findByIdAndUpdate( { _id: req.user.id } , { image: req.file.filename }, { new: true })
+        .then((userUpdated) => { 
             if (!userUpdated) return res.status(500).send({ status: "error", sysMessage: error.toString() });
 
             // Devolver respuesta

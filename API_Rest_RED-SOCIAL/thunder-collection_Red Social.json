@@ -1,0 +1,306 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Red Social",
+    "dateExported": "2024-01-31T15:28:26.789Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cc8cd178-4ad7-490d-81d3-9900cd782ee0",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "http://localhost:3900/api/user/registrar",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-28T08:34:26.506Z",
+            "modified": "2024-01-29T20:41:49.296Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Laura"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "White"
+                    },
+                    {
+                        "name": "nick",
+                        "value": "LauraW"
+                    },
+                    {
+                        "name": "email",
+                        "value": "laura.white@example.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "secure123"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d3d1002-abee-4ec4-8fbc-d1002dd74b11",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3900/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-28T08:35:34.257Z",
+            "modified": "2024-01-28T08:37:45.046Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Noel",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Sariñena",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xNoelSV",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "noelsava25@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5623679f-5663-4275-8cce-8a01a551a2da",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Prueba usuario",
+            "url": "http://localhost:3900/api/user/prueba-usuario",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-28T10:17:00.322Z",
+            "modified": "2024-01-28T10:25:04.823Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NDM3NDkxLCJleHAiOjE3MDkwMjk0OTF9.82UVa5XIxJZdvdO28Z7nA-gBVqB5hqTdDMT_-aOL2nE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Noel",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Sariñena",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xNoelSV",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "noel@gmail.com",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "359978de-920b-493f-b9d0-7ff46e9ff8bf",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Listado",
+            "url": "http://localhost:3900/api/user/list/2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-29T20:35:06.906Z",
+            "modified": "2024-01-29T20:43:29.732Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTI0ZjhhZGRlYjZhMmQ0MGYxYSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2VsQGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NDM1ODI0fQ.Sknwqd76FXTN753UMaGfCqMkAKW2HWNRg7am5vzIvtI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Noel",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Sariñena",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xNoelSV",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "noel@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f88a792a-0840-48df-acc9-195a0b49744b",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Upload",
+            "url": "http://localhost:3900/api/user/upload",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-01-30T21:51:31.296Z",
+            "modified": "2024-01-31T13:28:45.527Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file0",
+                        "value": "c:\\Users\\noels\\Pictures\\Saved Pictures\\Screenshot_3.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ea9fb0c9-8619-4011-aa8b-60df550708a9",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Follow: save",
+            "url": "http://localhost:3900/api/follow/save",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-01-31T13:46:33.618Z",
+            "modified": "2024-01-31T14:47:52.363Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "followed",
+                        "value": "65b80d26718201be316a3d9b"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d2f1ed4e-e404-433f-8bc1-5c63cd0250a2",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Follow: Unfollow",
+            "url": "http://localhost:3900/api/follow/unfollow/65b61124f8addeb6a2d40f1a",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-01-31T14:01:38.126Z",
+            "modified": "2024-01-31T14:01:38.126Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "71532cdb-9edd-45a5-b081-d9f47c97b3f7",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Follow: Followers",
+            "url": "http://localhost:3900/api/follow/followers",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-01-31T14:02:37.678Z",
+            "modified": "2024-01-31T14:02:37.678Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "337d4816-98a0-4129-919b-f354daa87cec",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Follow: Following",
+            "url": "http://localhost:3900/api/follow/following/65b61150f8addeb6a2d40f20/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-01-31T15:28:15.186Z",
+            "modified": "2024-01-31T15:28:15.186Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
