@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "65ba5d85083e544e863db923"
+  },
+  "user": {
+    "$oid": "65b61150f8addeb6a2d40f20"
+  },
+  "followed": {
+    "$oid": "65b61124f8addeb6a2d40f1a"
+  },
+  "created_at": {
+    "$date": "2024-01-31T14:45:15.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba5d8a083e544e863db925"
+  },
+  "user": {
+    "$oid": "65b61150f8addeb6a2d40f20"
+  },
+  "followed": {
+    "$oid": "65b6114df8addeb6a2d40f1d"
+  },
+  "created_at": {
+    "$date": "2024-01-31T14:45:15.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba5d94083e544e863db927"
+  },
+  "user": {
+    "$oid": "65b61150f8addeb6a2d40f20"
+  },
+  "followed": {
+    "$oid": "65b80d16718201be316a3d98"
+  },
+  "created_at": {
+    "$date": "2024-01-31T14:45:15.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65ba5d98083e544e863db929"
+  },
+  "user": {
+    "$oid": "65b61150f8addeb6a2d40f20"
+  },
+  "followed": {
+    "$oid": "65b80d26718201be316a3d9b"
+  },
+  "created_at": {
+    "$date": "2024-01-31T14:45:15.780Z"
+  },
+  "__v": 0
+}]

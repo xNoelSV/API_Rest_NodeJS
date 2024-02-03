@@ -1,0 +1,224 @@
+[{
+  "_id": {
+    "$oid": "65b61124f8addeb6a2d40f1a"
+  },
+  "name": "Noel",
+  "surname": "Sariñena",
+  "nick": "xNoelSV",
+  "email": "noel@gmail.com",
+  "password": "$2b$10$KZoJmr7qrfV0vhzTKSuiY./X7IjTjNrkfxMSEWwDT523eZ3feiiaK",
+  "role": "role_user",
+  "image": "avatar-1706651156841-Screenshot_3.png",
+  "created_at": {
+    "$date": "2024-01-28T08:32:36.335Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b6114df8addeb6a2d40f1d"
+  },
+  "name": "Noel",
+  "surname": "Sariñena",
+  "nick": "xNoelSV",
+  "email": "noelsava@gmail.com",
+  "password": "$2b$10$MnBGNFFxV0580qhEzmcik.Wk0h81W50NrFdXQrgkhtHB/7k0RlVvG",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-28T08:33:17.792Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b61150f8addeb6a2d40f20"
+  },
+  "name": "Noel",
+  "surname": "Sariñena",
+  "nick": "xNoelSV",
+  "email": "noelsava25@gmail.com",
+  "password": "$2b$10$M4EkskuHO3wYVahOgpZQleqBKnro5lhkew4polN9dnu5JvA2nSp1C",
+  "role": "role_user",
+  "image": "avatar-1706741303153-Screenshot_3.png",
+  "created_at": {
+    "$date": "2024-01-28T08:33:20.881Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b61154f8addeb6a2d40f23"
+  },
+  "name": "Noel",
+  "surname": "Sariñena",
+  "nick": "xNoelSV",
+  "email": "noelsava2@gmail.com",
+  "password": "$2b$10$NWb6Z30WZ.FiwzyJxUyXF.RrXwryLYDVTQYWT34ZqgxcWyZ2B3kAK",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-28T08:33:24.247Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d16718201be316a3d98"
+  },
+  "name": "John",
+  "surname": "Doe",
+  "nick": "JohnDoe",
+  "email": "johndoe@example.com",
+  "password": "$2b$10$oaGfFNdSFw/KvoBkfqpASugbCxq9A1lvwyBaqHdEajRYHRw4KYd7y",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:39:50.846Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d26718201be316a3d9b"
+  },
+  "name": "Alice",
+  "surname": "Smith",
+  "nick": "AliceSmith",
+  "email": "alice.smith@example.com",
+  "password": "$2b$10$R6uMReOeaOxM22RiNFIvYuyWykCQ6SEEFlw8E.Hh3CFEZlNthMcrm",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:06.812Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d2e718201be316a3d9e"
+  },
+  "name": "Bob",
+  "surname": "Johnson",
+  "nick": "BobJohnson",
+  "email": "bob.johnson@example.com",
+  "password": "$2b$10$hEHOiYnc8Elq6xMsjGFWzedWFXcojQsOmJF6qBkU68YyXg/gWQXmq",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:14.774Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d36718201be316a3da1"
+  },
+  "name": "Emily",
+  "surname": "Brown",
+  "nick": "EmilyB",
+  "email": "emilybrown@example.com",
+  "password": "$2b$10$tDt2yNB3qJJoWsRROHntm.BVE/69GvWep.jDHHGhj1DdBtRozHpae",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:22.709Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d3f718201be316a3da4"
+  },
+  "name": "Michael",
+  "surname": "Clark",
+  "nick": "MikeC",
+  "email": "mike.clark@example.com",
+  "password": "$2b$10$2l2IFnBbJuE4G0BV6/SCVe3pxZR16pFgOxiQpmi2s/WrHqFJgWDH2",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:31.832Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d48718201be316a3da7"
+  },
+  "name": "Sarah",
+  "surname": "Wilson",
+  "nick": "SarahW",
+  "email": "sarah.wilson@example.com",
+  "password": "$2b$10$wJBvs8Z/51L26ps9Vml.4.vrppv4igpxoCaQTdTUKbgp8EskCcOTi",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:40.280Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d4e718201be316a3daa"
+  },
+  "name": "David",
+  "surname": "Thomas",
+  "nick": "DThomas",
+  "email": "david.thomas@example.com",
+  "password": "$2b$10$lN3bXreLdcjselw8sBiWr.oYpK6kQE8HnhZcEgzx8jUnyvLTBz77i",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:46.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d55718201be316a3dad"
+  },
+  "name": "Jessica",
+  "surname": "Lee",
+  "nick": "JessLee",
+  "email": "jessica.lee@example.com",
+  "password": "$2b$10$14/2XA8ZkHc5AOli9TfkY.XicEVytZL1gXm4v.Ut1bbL5ADAfwWMq",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:40:53.776Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d5e718201be316a3db0"
+  },
+  "name": "Matthew",
+  "surname": "Miller",
+  "nick": "MattM",
+  "email": "matthew.miller@example.com",
+  "password": "$2b$10$Eg4HQ3Q2gRecTIfT/gi0IelroKpADE8M86cPQkcvFbLqrqvYLCRI2",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:41:02.327Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65b80d64718201be316a3db3"
+  },
+  "name": "Laura",
+  "surname": "White",
+  "nick": "LauraW",
+  "email": "laura.white@example.com",
+  "password": "$2b$10$5p/FR7qZSM.f1qePcN1XjOJirvqy2z53M6KKaP/3x23ickXVgWKRm",
+  "role": "role_user",
+  "image": "default.png",
+  "created_at": {
+    "$date": "2024-01-29T20:41:08.800Z"
+  },
+  "__v": 0
+}]
