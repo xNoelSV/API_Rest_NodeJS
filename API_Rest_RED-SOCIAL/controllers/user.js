@@ -8,7 +8,8 @@ const path = require("path");
 const User = require("../models/user");
 
 // Importar servicios
-const jwt = require("../services/jwt")
+const jwt = require("../services/jwt");
+const followService = require("../services/followService");
 
 // Acciones de prueba
 const pruebaUser = (req, res) => {
@@ -119,13 +120,21 @@ const profile = (req, res) => {
         .findById(id)
         .select({ password: 0, role: 0 })
         .exec()
-        .then((userProfile) => {
+        .then(async (userProfile) => {
 
             // Comprueba si existe el usuario
             if (!userProfile) return res.status(404).send({ status: "error", message: "Usuario no existente" })
 
+            // Info de seguimiento (late)
+            const followInfo = await followService.followThisUser(req.user.id, id)
+
             // Devolver el resultado
-            return res.status(200).send({ status: "success", user: userProfile })
+            return res.status(200).send({
+                status: "success",
+                user: userProfile,
+                following: followInfo.following,
+                follower: followInfo.follower
+            });
 
         })
         .catch((error) => {
@@ -147,11 +156,23 @@ const list = async (req, res) => {
         .find()
         .sort("_id")
         .paginate(page, itemsPerPage)
-        .then((users) => {
+        .then(async (users) => {
             if (!users) return res.status(404).send({ status: "error", message: "No hay usuarios disponibles" });
 
+            // Sacar un array de ids de los usuarios que me siguen y sigo como "x"
+            let followUserIds = await followService.followUserIds(req.user.id);
+
             // Devolver resultado (posteriormente info de follows)
-            return res.status(200).send({ status: "success", users, itemsPerPage, totalItems: total, page, pages: Math.ceil(total / itemsPerPage) })
+            return res.status(200).send({
+                status: "success",
+                users,
+                itemsPerPage,
+                totalItems: total,
+                page,
+                pages: Math.ceil(total / itemsPerPage),
+                user_following: followUserIds.following,
+                user_follow_me: followUserIds.followers
+            });
         })
         .catch((error) => {
             return res.status(500).send({ status: "error", message: "Error en la consulta", sysMessage: error.toString() })
@@ -239,8 +260,8 @@ const upload = (req, res) => {
 
     // Si es correcta, guardar imagen en la base de datos
     User
-        .findByIdAndUpdate( { _id: req.user.id } , { image: req.file.filename }, { new: true })
-        .then((userUpdated) => { 
+        .findByIdAndUpdate({ _id: req.user.id }, { image: req.file.filename }, { new: true })
+        .then((userUpdated) => {
             if (!userUpdated) return res.status(500).send({ status: "error", sysMessage: error.toString() });
 
             // Devolver respuesta
@@ -262,7 +283,7 @@ const avatar = (req, res) => {
     // Comprobar que existe
     fs.stat(filePath, (error, exists) => {
         if (!exists) return res.status(404).send({ status: "error", message: "No existe la imagen" });
-        
+
         // Devolver un file
         return res.sendFile(path.resolve(filePath));
     });

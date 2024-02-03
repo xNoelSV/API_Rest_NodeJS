@@ -2,6 +2,9 @@
 const Follow = require("../models/follow");
 const User = require("../models/user");
 
+// Importar servicio
+const followService = require("../services/followService");
+
 // Acciones de prueba
 const pruebaFollow = (req, res) => {
     return res.status(200).send({
@@ -77,30 +80,33 @@ const following = (req, res) => {
 
     // Find a follow, popular datos de los usuarios y paginar con mongoose pagination
     Follow
-        .paginate({ user: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -__v" }})
-        .then((follows) => {
+        .paginate({ user: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -__v" } })
+        .then(async (follows) => {
+
+            // Listado de usuarios de "x", siendo yo "y"
+            // Sacar un array de ids de los usuarios que me siguen y sigo como "x"
+            let followUserIds = await followService.followUserIds(req.user.id);
 
             // Devolver el resultado
-            return res.status(200).send({ status: "success", message: "Listado de usuarios que estoy siguiendo", follows });
+            return res.status(200).send({ 
+                status: "success", 
+                message: "Listado de usuarios que estoy siguiendo", 
+                user_following: followUserIds.following,
+                user_follow_me: followUserIds.followers
+                //follows
+            });
         })
         .catch((error) => {
             return res.status(400).send({ status: "error", sysMessage: error.toString() })
         });
-
-    // Listado de usuarios de x, yo soy y, estan siguiendonos a ambos
-    // Sacar un array de ids de los usuarios que me siguen y los que sigo como y
-
-
 }
 
-// Acción listado de usuarios que cualquier usuario otro usuario (soy seguido)
+// Acción listado de usuarios que cualquier usuario otro usuario (soy seguido, mis seguidores)
 const followers = (req, res) => {
 
     // Devolver el resultado
     return res.status(200).send({ status: "success", message: "Listado de usuarios que me siguien" });
 }
-
-// Acción listado de usuarios que me siguen
 
 // Exportar acciones
 module.exports = {

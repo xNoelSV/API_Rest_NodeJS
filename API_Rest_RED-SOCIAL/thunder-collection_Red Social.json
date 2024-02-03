@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Red Social",
-    "dateExported": "2024-01-31T15:28:26.789Z",
+    "dateExported": "2024-02-03T09:43:41.412Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,11 +10,11 @@
             "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
             "containerId": "",
             "name": "Registrar",
-            "url": "http://localhost:3900/api/user/registrar",
+            "url": "http://localhost:3900/api/user/register",
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-01-28T08:34:26.506Z",
-            "modified": "2024-01-29T20:41:49.296Z",
+            "modified": "2024-01-31T22:48:55.234Z",
             "headers": [],
             "params": [],
             "body": {
@@ -40,6 +40,10 @@
                     {
                         "name": "password",
                         "value": "secure123"
+                    },
+                    {
+                        "name": "bio",
+                        "value": "Hola  "
                     }
                 ]
             },
@@ -97,11 +101,11 @@
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-01-28T10:17:00.322Z",
-            "modified": "2024-01-28T10:25:04.823Z",
+            "modified": "2024-02-03T09:42:21.761Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NDM3NDkxLCJleHAiOjE3MDkwMjk0OTF9.82UVa5XIxJZdvdO28Z7nA-gBVqB5hqTdDMT_-aOL2nE"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -147,11 +151,11 @@
             "method": "GET",
             "sortNum": 40000,
             "created": "2024-01-29T20:35:06.906Z",
-            "modified": "2024-01-29T20:43:29.732Z",
+            "modified": "2024-02-03T09:42:33.579Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTI0ZjhhZGRlYjZhMmQ0MGYxYSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2VsQGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NDM1ODI0fQ.Sknwqd76FXTN753UMaGfCqMkAKW2HWNRg7am5vzIvtI"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -195,11 +199,11 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-01-30T21:51:31.296Z",
-            "modified": "2024-01-31T13:28:45.527Z",
+            "modified": "2024-02-03T09:42:41.505Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -225,11 +229,11 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-01-31T13:46:33.618Z",
-            "modified": "2024-01-31T14:47:52.363Z",
+            "modified": "2024-02-03T09:42:49.988Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -254,11 +258,11 @@
             "method": "DELETE",
             "sortNum": 80000,
             "created": "2024-01-31T14:01:38.126Z",
-            "modified": "2024-01-31T14:01:38.126Z",
+            "modified": "2024-02-03T09:42:56.869Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -273,11 +277,11 @@
             "method": "GET",
             "sortNum": 100000,
             "created": "2024-01-31T14:02:37.678Z",
-            "modified": "2024-01-31T14:02:37.678Z",
+            "modified": "2024-02-03T09:43:02.947Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
@@ -292,11 +296,11 @@
             "method": "GET",
             "sortNum": 110000,
             "created": "2024-01-31T15:28:15.186Z",
-            "modified": "2024-01-31T15:28:15.186Z",
+            "modified": "2024-02-03T09:43:08.987Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2NzA3Njg3LCJleHAiOjE3MDkyOTk2ODd9.jYulU4kcOBsDIpLMazSoGWAYExvGs1YMm2-u7N_bvaM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
                 }
             ],
             "params": [],
