@@ -88,9 +88,9 @@ const following = (req, res) => {
             let followUserIds = await followService.followUserIds(req.user.id);
 
             // Devolver el resultado
-            return res.status(200).send({ 
-                status: "success", 
-                message: "Listado de usuarios que estoy siguiendo", 
+            return res.status(200).send({
+                status: "success",
+                message: "Listado de usuarios que estoy siguiendo",
                 user_following: followUserIds.following,
                 user_follow_me: followUserIds.followers
                 //follows
@@ -103,9 +103,39 @@ const following = (req, res) => {
 
 // Acción listado de usuarios que cualquier usuario otro usuario (soy seguido, mis seguidores)
 const followers = (req, res) => {
+    // Scar el id del usuario identificado
+    let userId = req.user.id;
 
-    // Devolver el resultado
-    return res.status(200).send({ status: "success", message: "Listado de usuarios que me siguien" });
+    // Comprobar si me llega el id por parámetro en la url
+    if (req.params.id) userId = req.params.id;
+
+    // Comprobar si me llega la página, si no la página 1
+    let page = 1;
+    if (req.params.page) page = req.params.page;
+
+    // Usuarios por página quiero mostrar
+    const itemsPerPage = 5;
+
+    // Find a follow, popular datos de los usuarios y paginar con mongoose pagination
+    Follow
+        .paginate({ followed: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -role -__v" } })
+        .then(async (follows) => {
+
+            let followUserIds = await followService.followUserIds(req.user.id);
+
+            // Devolver el resultado
+            return res.status(200).send({
+                status: "success",
+                message: "Listado de usuarios que me siguen",
+                follows,
+                user_following: followUserIds.following,
+                user_follow_me: followUserIds.followers
+                //follows
+            });
+        })
+        .catch((error) => {
+            return res.status(400).send({ status: "error", sysMessage: error.toString() })
+        });
 }
 
 // Exportar acciones

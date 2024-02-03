@@ -1,97 +1,10 @@
 {
     "client": "Thunder Client",
     "collectionName": "Red Social",
-    "dateExported": "2024-02-03T09:43:41.412Z",
+    "dateExported": "2024-02-03T22:34:10.624Z",
     "version": "1.1",
     "folders": [],
     "requests": [
-        {
-            "_id": "cc8cd178-4ad7-490d-81d3-9900cd782ee0",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
-            "containerId": "",
-            "name": "Registrar",
-            "url": "http://localhost:3900/api/user/register",
-            "method": "POST",
-            "sortNum": 10000,
-            "created": "2024-01-28T08:34:26.506Z",
-            "modified": "2024-01-31T22:48:55.234Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "name",
-                        "value": "Laura"
-                    },
-                    {
-                        "name": "surname",
-                        "value": "White"
-                    },
-                    {
-                        "name": "nick",
-                        "value": "LauraW"
-                    },
-                    {
-                        "name": "email",
-                        "value": "laura.white@example.com"
-                    },
-                    {
-                        "name": "password",
-                        "value": "secure123"
-                    },
-                    {
-                        "name": "bio",
-                        "value": "Hola  "
-                    }
-                ]
-            },
-            "tests": []
-        },
-        {
-            "_id": "4d3d1002-abee-4ec4-8fbc-d1002dd74b11",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
-            "containerId": "",
-            "name": "Login",
-            "url": "http://localhost:3900/api/user/login",
-            "method": "POST",
-            "sortNum": 20000,
-            "created": "2024-01-28T08:35:34.257Z",
-            "modified": "2024-01-28T08:37:45.046Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "formencoded",
-                "raw": "",
-                "form": [
-                    {
-                        "name": "name",
-                        "value": "Noel",
-                        "isDisabled": true
-                    },
-                    {
-                        "name": "surname",
-                        "value": "Sariñena",
-                        "isDisabled": true
-                    },
-                    {
-                        "name": "nick",
-                        "value": "xNoelSV",
-                        "isDisabled": true
-                    },
-                    {
-                        "name": "email",
-                        "value": "noelsava25@gmail.com"
-                    },
-                    {
-                        "name": "password",
-                        "value": "contraseña"
-                    }
-                ]
-            },
-            "tests": []
-        },
         {
             "_id": "5623679f-5663-4275-8cce-8a01a551a2da",
             "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
@@ -99,13 +12,13 @@
             "name": "Prueba usuario",
             "url": "http://localhost:3900/api/user/prueba-usuario",
             "method": "GET",
-            "sortNum": 30000,
+            "sortNum": 5000,
             "created": "2024-01-28T10:17:00.322Z",
-            "modified": "2024-02-03T09:42:21.761Z",
+            "modified": "2024-02-03T21:43:43.938Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
                 }
             ],
             "params": [],
@@ -143,19 +56,125 @@
             "tests": []
         },
         {
+            "_id": "cc8cd178-4ad7-490d-81d3-9900cd782ee0",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "http://localhost:3900/api/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-28T08:34:26.506Z",
+            "modified": "2024-02-03T21:42:49.283Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Benjamin"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Gupta"
+                    },
+                    {
+                        "name": "nick",
+                        "value": "BenG"
+                    },
+                    {
+                        "name": "email",
+                        "value": "benjamin.gupta@example.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    },
+                    {
+                        "name": "bio",
+                        "value": "Dream chaser"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "4d3d1002-abee-4ec4-8fbc-d1002dd74b11",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3900/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-28T08:35:34.257Z",
+            "modified": "2024-02-03T21:52:42.501Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Noel",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Sariñena",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xNoelSV",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "noelsava25@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3628b911-7f16-47d5-8dfc-517e3d85a8e9",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Profile",
+            "url": "http://localhost:3900/api/user/profile/65beb3595fbf8695bc432308",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-02-03T22:09:17.671Z",
+            "modified": "2024-02-03T22:09:17.671Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
             "_id": "359978de-920b-493f-b9d0-7ff46e9ff8bf",
             "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
             "containerId": "",
             "name": "Listado",
-            "url": "http://localhost:3900/api/user/list/2",
+            "url": "http://localhost:3900/api/user/list/4",
             "method": "GET",
             "sortNum": 40000,
             "created": "2024-01-29T20:35:06.906Z",
-            "modified": "2024-02-03T09:42:33.579Z",
+            "modified": "2024-02-03T22:22:30.987Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk4OTQwLCJleHAiOjE3MDk1OTA5NDB9.VFroHi7aJ4cSzE_yYVZZmJnrktk-cDo-GjAlHA-xoVk"
                 }
             ],
             "params": [],
@@ -180,11 +199,13 @@
                     },
                     {
                         "name": "email",
-                        "value": "noel@gmail.com"
+                        "value": "noel@gmail.com",
+                        "isDisabled": true
                     },
                     {
                         "name": "password",
-                        "value": "contraseña"
+                        "value": "contraseña",
+                        "isDisabled": true
                     }
                 ]
             },
@@ -199,11 +220,11 @@
             "method": "POST",
             "sortNum": 50000,
             "created": "2024-01-30T21:51:31.296Z",
-            "modified": "2024-02-03T09:42:41.505Z",
+            "modified": "2024-02-03T21:43:59.137Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
                 }
             ],
             "params": [],
@@ -229,11 +250,11 @@
             "method": "POST",
             "sortNum": 70000,
             "created": "2024-01-31T13:46:33.618Z",
-            "modified": "2024-02-03T09:42:49.988Z",
+            "modified": "2024-02-03T21:52:57.691Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
                 }
             ],
             "params": [],
@@ -243,7 +264,7 @@
                 "form": [
                     {
                         "name": "followed",
-                        "value": "65b80d26718201be316a3d9b"
+                        "value": "65beb3595fbf8695bc432308"
                     }
                 ]
             },
@@ -258,30 +279,11 @@
             "method": "DELETE",
             "sortNum": 80000,
             "created": "2024-01-31T14:01:38.126Z",
-            "modified": "2024-02-03T09:42:56.869Z",
+            "modified": "2024-02-03T21:44:08.308Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
-                }
-            ],
-            "params": [],
-            "tests": []
-        },
-        {
-            "_id": "71532cdb-9edd-45a5-b081-d9f47c97b3f7",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
-            "containerId": "",
-            "name": "Follow: Followers",
-            "url": "http://localhost:3900/api/follow/followers",
-            "method": "GET",
-            "sortNum": 100000,
-            "created": "2024-01-31T14:02:37.678Z",
-            "modified": "2024-02-03T09:43:02.947Z",
-            "headers": [
-                {
-                    "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
                 }
             ],
             "params": [],
@@ -292,15 +294,34 @@
             "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
             "containerId": "",
             "name": "Follow: Following",
-            "url": "http://localhost:3900/api/follow/following/65b61150f8addeb6a2d40f20/1",
+            "url": "http://localhost:3900/api/follow/following/65beb28e5fbf8695bc4322d2/1",
             "method": "GET",
-            "sortNum": 110000,
+            "sortNum": 90000,
             "created": "2024-01-31T15:28:15.186Z",
-            "modified": "2024-02-03T09:43:08.987Z",
+            "modified": "2024-02-03T21:47:57.822Z",
             "headers": [
                 {
                     "name": "Authorization",
-                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YjYxMTUwZjhhZGRlYjZhMmQ0MGYyMCIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImF2YXRhci0xNzA2NzQxMzAzMTUzLVNjcmVlbnNob3RfMy5wbmciLCJpYXQiOjE3MDY5NTMzMDAsImV4cCI6MTcwOTU0NTMwMH0.w-_OiNV8KSYVnQ-0ejIoMUdUOTdGbbS9-4SdXqx_vcM"
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "71532cdb-9edd-45a5-b081-d9f47c97b3f7",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Follow: Followers",
+            "url": "http://localhost:3900/api/follow/followers/65beb28e5fbf8695bc4322d2",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-01-31T14:02:37.678Z",
+            "modified": "2024-02-03T22:33:27.675Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
                 }
             ],
             "params": [],
