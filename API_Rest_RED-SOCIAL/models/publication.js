@@ -1,4 +1,5 @@
 const {Schema, model} = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate-v2");
 
 const PublicationSchema = Schema({
     user: {
@@ -9,11 +10,16 @@ const PublicationSchema = Schema({
         type: String,
         required: true
     },
-    file: String,
+    file: {
+        type: String,
+    },
     create_at: {
         type: Date,
-        default: Date.now()
+        default: Date.now
     }
 });
+
+// Registra el plugin de paginación en el esquema
+PublicationSchema.plugin(mongoosePaginate);
 
 module.exports = model("Publication", PublicationSchema, "publications");

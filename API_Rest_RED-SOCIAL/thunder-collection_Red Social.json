@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Red Social",
-    "dateExported": "2024-02-03T22:34:10.624Z",
+    "dateExported": "2024-02-04T21:49:27.738Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -108,7 +108,7 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-01-28T08:35:34.257Z",
-            "modified": "2024-02-03T21:52:42.501Z",
+            "modified": "2024-02-04T20:43:09.947Z",
             "headers": [],
             "params": [],
             "body": {
@@ -325,6 +325,160 @@
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3fb29c79-50f5-415a-a51d-3dcb74f32cce",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Publication: save",
+            "url": "http://localhost:3900/api/publication/save",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-04T20:11:57.243Z",
+            "modified": "2024-02-04T20:55:48.981Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3MDgwMTM1LCJleHAiOjE3MDk2NzIxMzV9.8ehAgmGTpXa6N7qiutewxZcm9DX9vcU1AihBlVZqwXc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Publicacion noel@gmail.com 6"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "94711a1b-4a44-4ac4-9f74-7c88049ab64d",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Publication: Detail",
+            "url": "http://localhost:3900/api/publication/detail",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-02-04T20:17:20.163Z",
+            "modified": "2024-02-04T20:17:20.163Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Esta es mi primera publicación "
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "586286e1-ffb6-42a0-9c09-8b3f873e075b",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Publication: remove",
+            "url": "http://localhost:3900/api/publication/remove/65bff01abfc8bb04f7f9ab50",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-02-04T20:32:50.939Z",
+            "modified": "2024-02-04T20:32:50.939Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA2OTk2NjA1LCJleHAiOjE3MDk1ODg2MDV9.8bZOjRog6E4fpEv0eu-WwrUuUAzRY2qfzatrPiwr9Bw"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Esta es mi primera publicación ",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e91799ae-789f-4689-9e3a-49ba1a4216eb",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Publication: Publications de un user",
+            "url": "http://localhost:3900/api/publication/user/65beb28e5fbf8695bc4322d2",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-02-04T21:34:48.105Z",
+            "modified": "2024-02-04T21:34:48.105Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3MDgwMTM1LCJleHAiOjE3MDk2NzIxMzV9.8ehAgmGTpXa6N7qiutewxZcm9DX9vcU1AihBlVZqwXc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Esta es mi primera publicación ",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5180c361-1e5b-4244-8e6f-d94e1bc6c4a1",
+            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "containerId": "",
+            "name": "Publications: Show media",
+            "url": "http://localhost:3900/api/publication/media/pub-1707082931468-Screenshot_3.png",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-02-04T21:49:12.078Z",
+            "modified": "2024-02-04T21:49:12.078Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3MDgwMTM1LCJleHAiOjE3MDk2NzIxMzV9.8ehAgmGTpXa6N7qiutewxZcm9DX9vcU1AihBlVZqwXc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "file0",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "file0",
+                        "value": "c:\\Users\\noels\\Pictures\\Saved Pictures\\Screenshot_3.png"
+                    }
+                ]
+            },
             "tests": []
         }
     ]
