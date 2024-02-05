@@ -5,6 +5,9 @@ const path = require("path");
 // Importar modelos
 const Publication = require("../models/publication");
 
+// Importar servicios
+const FollowService = require("../services/followService");
+
 // Acciones de prueba
 const pruebaPublication = (req, res) => {
     return res.status(200).send({
@@ -173,7 +176,26 @@ const media = (req, res) => {
 }
 
 // Listar todas las publicaciones (FEED)
+const feed = async(req, res) => {
+    // Sacar la página actual
+    let page = 1;
+    if (req.params.page) page = req.params.page;
 
+    // Establecer número de de elementos por página
+    let itemsPerPage = 5;
+
+    // Sacar un array de identificadores de usuarios que yo sigo como usuario identificado
+    try {
+        const myFollows = await FollowService.followUserIds(req.user.id);
+    } catch (error) {
+        return res.status(500).send({ status: "error", sysMessage: error.toString() });
+    }
+    
+    // Find a publicaciones utilizando operador "in". Ordenar, popular y paginar
+
+    // Devolver respuesta
+    return res.status(200).send({ status: "success", message: "Ruta en pruebas" });
+}
 
 /**
  * respuesta defecto:
@@ -191,5 +213,6 @@ module.exports = {
     remove,
     user,
     upload,
-    media
+    media,
+    feed
 }

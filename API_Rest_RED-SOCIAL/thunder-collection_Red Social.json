@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "Red Social",
-    "dateExported": "2024-02-04T21:49:27.738Z",
+    "dateExported": "2024-02-05T10:56:31.451Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "5623679f-5663-4275-8cce-8a01a551a2da",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "a9735714-0bd0-40d5-a5a2-aae63b69b7cc",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Prueba usuario",
             "url": "http://localhost:3900/api/user/prueba-usuario",
             "method": "GET",
             "sortNum": 5000,
-            "created": "2024-01-28T10:17:00.322Z",
-            "modified": "2024-02-03T21:43:43.938Z",
+            "created": "2024-02-05T09:28:36.791Z",
+            "modified": "2024-02-05T09:28:36.791Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -56,15 +56,15 @@
             "tests": []
         },
         {
-            "_id": "cc8cd178-4ad7-490d-81d3-9900cd782ee0",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "dfbff501-5b17-4896-998a-8dcc1f1a779c",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Registrar",
             "url": "http://localhost:3900/api/user/register",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-01-28T08:34:26.506Z",
-            "modified": "2024-02-03T21:42:49.283Z",
+            "created": "2024-02-05T09:28:36.789Z",
+            "modified": "2024-02-05T09:28:36.789Z",
             "headers": [],
             "params": [],
             "body": {
@@ -100,15 +100,15 @@
             "tests": []
         },
         {
-            "_id": "4d3d1002-abee-4ec4-8fbc-d1002dd74b11",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "1e357d14-dcf3-4561-aa80-ff3668f28687",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Login",
             "url": "http://localhost:3900/api/user/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-01-28T08:35:34.257Z",
-            "modified": "2024-02-04T20:43:09.947Z",
+            "created": "2024-02-05T09:28:36.790Z",
+            "modified": "2024-02-05T09:28:36.790Z",
             "headers": [],
             "params": [],
             "body": {
@@ -143,15 +143,15 @@
             "tests": []
         },
         {
-            "_id": "3628b911-7f16-47d5-8dfc-517e3d85a8e9",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "a3f28077-24cc-4173-93a9-a987d159248c",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Profile",
             "url": "http://localhost:3900/api/user/profile/65beb3595fbf8695bc432308",
             "method": "GET",
             "sortNum": 25000,
-            "created": "2024-02-03T22:09:17.671Z",
-            "modified": "2024-02-03T22:09:17.671Z",
+            "created": "2024-02-05T09:28:36.798Z",
+            "modified": "2024-02-05T09:28:36.798Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -162,15 +162,15 @@
             "tests": []
         },
         {
-            "_id": "359978de-920b-493f-b9d0-7ff46e9ff8bf",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "a2c55dfc-5a05-4797-9e98-8f4946a011b3",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Listado",
             "url": "http://localhost:3900/api/user/list/4",
             "method": "GET",
             "sortNum": 40000,
-            "created": "2024-01-29T20:35:06.906Z",
-            "modified": "2024-02-03T22:22:30.987Z",
+            "created": "2024-02-05T09:28:36.792Z",
+            "modified": "2024-02-05T09:28:36.792Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -212,15 +212,15 @@
             "tests": []
         },
         {
-            "_id": "f88a792a-0840-48df-acc9-195a0b49744b",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "88032937-18b7-4414-82ae-1c44796eb17e",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Upload",
             "url": "http://localhost:3900/api/user/upload",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2024-01-30T21:51:31.296Z",
-            "modified": "2024-02-03T21:43:59.137Z",
+            "created": "2024-02-05T09:28:36.793Z",
+            "modified": "2024-02-05T09:28:36.793Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -242,15 +242,15 @@
             "tests": []
         },
         {
-            "_id": "ea9fb0c9-8619-4011-aa8b-60df550708a9",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "14b7f948-49da-4cad-bd9e-1605f9dc7a49",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Follow: save",
             "url": "http://localhost:3900/api/follow/save",
             "method": "POST",
             "sortNum": 70000,
-            "created": "2024-01-31T13:46:33.618Z",
-            "modified": "2024-02-03T21:52:57.691Z",
+            "created": "2024-02-05T09:28:36.794Z",
+            "modified": "2024-02-05T09:28:36.794Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -271,15 +271,15 @@
             "tests": []
         },
         {
-            "_id": "d2f1ed4e-e404-433f-8bc1-5c63cd0250a2",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "56641c68-f4f3-44bd-99d2-ebf9db02b7d3",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Follow: Unfollow",
             "url": "http://localhost:3900/api/follow/unfollow/65b61124f8addeb6a2d40f1a",
             "method": "DELETE",
             "sortNum": 80000,
-            "created": "2024-01-31T14:01:38.126Z",
-            "modified": "2024-02-03T21:44:08.308Z",
+            "created": "2024-02-05T09:28:36.795Z",
+            "modified": "2024-02-05T09:28:36.795Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -290,15 +290,15 @@
             "tests": []
         },
         {
-            "_id": "337d4816-98a0-4129-919b-f354daa87cec",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "deae660c-6e93-4040-87a0-88d7194f61ca",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Follow: Following",
             "url": "http://localhost:3900/api/follow/following/65beb28e5fbf8695bc4322d2/1",
             "method": "GET",
             "sortNum": 90000,
-            "created": "2024-01-31T15:28:15.186Z",
-            "modified": "2024-02-03T21:47:57.822Z",
+            "created": "2024-02-05T09:28:36.797Z",
+            "modified": "2024-02-05T09:28:36.797Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -309,15 +309,15 @@
             "tests": []
         },
         {
-            "_id": "71532cdb-9edd-45a5-b081-d9f47c97b3f7",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "eff767fb-c38c-41b7-a6c8-452a4e5a5667",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Follow: Followers",
             "url": "http://localhost:3900/api/follow/followers/65beb28e5fbf8695bc4322d2",
             "method": "GET",
             "sortNum": 100000,
-            "created": "2024-01-31T14:02:37.678Z",
-            "modified": "2024-02-03T22:33:27.675Z",
+            "created": "2024-02-05T09:28:36.796Z",
+            "modified": "2024-02-05T09:28:36.796Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -328,15 +328,15 @@
             "tests": []
         },
         {
-            "_id": "3fb29c79-50f5-415a-a51d-3dcb74f32cce",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "e6bb36ec-4e55-4191-b943-afd20d7a1113",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Publication: save",
             "url": "http://localhost:3900/api/publication/save",
             "method": "POST",
             "sortNum": 110000,
-            "created": "2024-02-04T20:11:57.243Z",
-            "modified": "2024-02-04T20:55:48.981Z",
+            "created": "2024-02-05T09:28:36.799Z",
+            "modified": "2024-02-05T09:28:36.799Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -357,15 +357,15 @@
             "tests": []
         },
         {
-            "_id": "94711a1b-4a44-4ac4-9f74-7c88049ab64d",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "174ced82-a0ed-449f-a6bf-48840dd6b508",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Publication: Detail",
             "url": "http://localhost:3900/api/publication/detail",
             "method": "GET",
             "sortNum": 120000,
-            "created": "2024-02-04T20:17:20.163Z",
-            "modified": "2024-02-04T20:17:20.163Z",
+            "created": "2024-02-05T09:28:36.800Z",
+            "modified": "2024-02-05T09:28:36.800Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -386,15 +386,15 @@
             "tests": []
         },
         {
-            "_id": "586286e1-ffb6-42a0-9c09-8b3f873e075b",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "5bc6b7a6-0ff1-4cf5-a0fc-c4c2f94c2044",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Publication: remove",
             "url": "http://localhost:3900/api/publication/remove/65bff01abfc8bb04f7f9ab50",
             "method": "DELETE",
             "sortNum": 130000,
-            "created": "2024-02-04T20:32:50.939Z",
-            "modified": "2024-02-04T20:32:50.939Z",
+            "created": "2024-02-05T09:28:36.801Z",
+            "modified": "2024-02-05T09:28:36.801Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -416,15 +416,15 @@
             "tests": []
         },
         {
-            "_id": "e91799ae-789f-4689-9e3a-49ba1a4216eb",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "40451d5f-c715-4797-b004-60e4d65aa6a7",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Publication: Publications de un user",
             "url": "http://localhost:3900/api/publication/user/65beb28e5fbf8695bc4322d2",
             "method": "GET",
             "sortNum": 140000,
-            "created": "2024-02-04T21:34:48.105Z",
-            "modified": "2024-02-04T21:34:48.105Z",
+            "created": "2024-02-05T09:28:36.802Z",
+            "modified": "2024-02-05T09:28:36.802Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -446,15 +446,15 @@
             "tests": []
         },
         {
-            "_id": "5180c361-1e5b-4244-8e6f-d94e1bc6c4a1",
-            "colId": "26d6da2c-cd67-4461-90c3-4950c25cc731",
+            "_id": "ba4bf333-4c4c-4b9e-bac4-4483cc55aead",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
             "containerId": "",
             "name": "Publications: Show media",
             "url": "http://localhost:3900/api/publication/media/pub-1707082931468-Screenshot_3.png",
             "method": "GET",
             "sortNum": 150000,
-            "created": "2024-02-04T21:49:12.078Z",
-            "modified": "2024-02-04T21:49:12.078Z",
+            "created": "2024-02-05T09:28:36.803Z",
+            "modified": "2024-02-05T09:28:36.803Z",
             "headers": [
                 {
                     "name": "Authorization",
@@ -479,6 +479,25 @@
                     }
                 ]
             },
+            "tests": []
+        },
+        {
+            "_id": "a747eefe-dff5-4530-a034-6d529faa69d0",
+            "colId": "98a1898a-875a-41a6-9d32-e7aeef28a7c6",
+            "containerId": "",
+            "name": "Publication: Feed",
+            "url": "http://localhost:3900/api/publication/feed",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-02-05T10:56:24.168Z",
+            "modified": "2024-02-05T10:56:24.168Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YmViMjhlNWZiZjg2OTViYzQzMjJkMiIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3MDgwMTM1LCJleHAiOjE3MDk2NzIxMzV9.8ehAgmGTpXa6N7qiutewxZcm9DX9vcU1AihBlVZqwXc"
+                }
+            ],
+            "params": [],
             "tests": []
         }
     ]
