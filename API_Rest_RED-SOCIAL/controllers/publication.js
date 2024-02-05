@@ -176,7 +176,7 @@ const media = (req, res) => {
 }
 
 // Listar todas las publicaciones (FEED)
-const feed = async(req, res) => {
+const feed = async (req, res) => {
     // Sacar la página actual
     let page = 1;
     if (req.params.page) page = req.params.page;
@@ -187,14 +187,21 @@ const feed = async(req, res) => {
     // Sacar un array de identificadores de usuarios que yo sigo como usuario identificado
     try {
         const myFollows = await FollowService.followUserIds(req.user.id);
+
+        // Find a publicaciones utilizando operador "in". Ordenar, popular y paginar
+        Publication
+            .paginate({ "user": myFollows.following })
+            .then((publicacions) => {
+                // Devolver respuesta
+                return res.status(200).send({ status: "success", message: "Ruta en pruebas", following: myFollows.following, publicacions });
+
+            })
+            .catch((error) => {
+                return res.status(400).send({ status: "error", sysMessage: error.toString() });
+            });
     } catch (error) {
         return res.status(500).send({ status: "error", sysMessage: error.toString() });
     }
-    
-    // Find a publicaciones utilizando operador "in". Ordenar, popular y paginar
-
-    // Devolver respuesta
-    return res.status(200).send({ status: "success", message: "Ruta en pruebas" });
 }
 
 /**
