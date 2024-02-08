@@ -99,7 +99,7 @@ const user = (req, res) => {
             {
                 page: page,
                 limit: itemsPerPage,
-                populate: { path: "user", select: "-password -role -__v -iat -env" },
+                populate: { path: "user", select: "-password -role -email -__v -iat -env" },
                 sort: "created_at"
             })
         .then((publicationStored) => {
@@ -190,7 +190,9 @@ const feed = async (req, res) => {
 
         // Find a publicaciones utilizando operador "in". Ordenar, popular y paginar
         Publication
-            .paginate({ "user": myFollows.following })
+            .paginate(
+                { user: myFollows.following }, 
+                { page: page, limit: itemsPerPage, populate: {path: "user", select: "-password -role -__v -email", sort: "-created_at"} })
             .then((publicacions) => {
                 // Devolver respuesta
                 return res.status(200).send({ status: "success", message: "Ruta en pruebas", following: myFollows.following, publicacions });

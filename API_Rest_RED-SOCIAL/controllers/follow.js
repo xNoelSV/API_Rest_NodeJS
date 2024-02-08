@@ -80,7 +80,7 @@ const following = (req, res) => {
 
     // Find a follow, popular datos de los usuarios y paginar con mongoose pagination
     Follow
-        .paginate({ user: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -__v" } })
+        .paginate({ user: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -email -__v" } })
         .then(async (follows) => {
 
             // Listado de usuarios de "x", siendo yo "y"
@@ -118,7 +118,7 @@ const followers = (req, res) => {
 
     // Find a follow, popular datos de los usuarios y paginar con mongoose pagination
     Follow
-        .paginate({ followed: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -role -__v" } })
+        .paginate({ followed: userId }, { page: page, limit: itemsPerPage, populate: { path: "user followed", select: "-password -email -role -__v" } })
         .then(async (follows) => {
 
             let followUserIds = await followService.followUserIds(req.user.id);
@@ -130,7 +130,6 @@ const followers = (req, res) => {
                 follows,
                 user_following: followUserIds.following,
                 user_follow_me: followUserIds.followers
-                //follows
             });
         })
         .catch((error) => {

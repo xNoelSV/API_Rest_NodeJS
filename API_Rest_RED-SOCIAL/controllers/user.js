@@ -6,10 +6,13 @@ const path = require("path");
 
 // Importar modelos
 const User = require("../models/user");
+const Follow = require("../models/follow");
+const Publications = require("../models/publication");
 
 // Importar servicios
 const jwt = require("../services/jwt");
 const followService = require("../services/followService");
+const validate = require("../helpers/validate");
 
 // Acciones de prueba
 const pruebaUser = (req, res) => {
@@ -31,6 +34,13 @@ const register = (req, res) => {
             status: "error",
             message: "Faltan datos por enviar"
         });
+    }
+
+    // Validación avanzada
+    try {
+        validate(params);
+    } catch (error) {
+        return res.status(400).send({ status: "error", message: "Validación no superada" });
     }
 
     // Control de usuarios duplicados
@@ -154,8 +164,9 @@ const list = async (req, res) => {
     let total = await User.countDocuments({}).exec();
     User
         .find()
+        .select("-password -email -role -__v")
         .sort("_id")
-        .paginate(page, itemsPerPage)
+        .paginate(page,  )
         .then(async (users) => {
             if (!users) return res.status(404).send({ status: "error", message: "No hay usuarios disponibles" });
 
@@ -211,6 +222,8 @@ const update = (req, res) => {
             if (userToUpdate.password) {
                 let pwd = await bcrypt.hash(userToUpdate.password, 10);
                 userToUpdate.password = pwd;
+            } else {
+                delete userToUpdate.password;
             }
 
             // Buscar y actualizar
@@ -289,6 +302,24 @@ const avatar = (req, res) => {
     });
 }
 
+// Sacar seguidores
+const counters = async (req, res) => {
+    // Sacamos el usuario del que queremos contar los seguidores. Por defecto: Nosotros.
+    let userId = req.user.id;
+    if (req.params.id) userId = req.params.id;
+
+    // Sacamos el numero de seguidores, seguidos y publicaciones del usuario que estamos consultando.
+    try {
+        const following = await Follow.count({ "user": userId });
+        const followed = await Follow.count({ "followed": userId });
+        const publications = await Publications.count({ "user": userId });
+
+        return res.status(200).send({ userId, following: following, followed: followed, publications: publications});
+    } catch (error) {
+        return res.status(500).send({ status: "error", sysMessage: error.toString() });
+    }
+}
+
 // Exportar acciones
 module.exports = {
     pruebaUser,
@@ -298,5 +329,6 @@ module.exports = {
     list,
     update,
     upload,
-    avatar
+    avatar,
+    counters
 }
