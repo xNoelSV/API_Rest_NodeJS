@@ -33,7 +33,7 @@ Este repositorio contiene tres APIs diferentes desarrolladas en NodeJS, cada una
     git clone https://github.com/xNoelSV/API_Rest_NodeJS.git
     ```
 
-2. Navega a la carpeta de la API que desees utilizar (API_Rest_BLOG, API_Rest_RED-SOCIAL, API_Rest_APLICACION-MUSICA).
+2. Navega a la carpeta de la API que desees utilizar (API_Rest_BLOG, API_Rest_RED-SOCIAL, API_Rest_MUSICA).
 
 3. Instala las dependencias utilizando npm:
 

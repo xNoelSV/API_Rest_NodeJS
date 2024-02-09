@@ -2,3 +2,5 @@ arrancar-proyecto_Laptop.bat
 arrancar-proyecto_PC-Casa.bat
 API_Rest_RED-SOCIAL/database/DB_Mongo/*
 !API_Rest_RED-SOCIAL/database/DB_Mongo
+API_Rest_MUSICA/database/DB_Mongo/*
+!API_Rest_MUSICA/database/DB_Mongo
