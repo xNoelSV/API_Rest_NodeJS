@@ -206,14 +206,6 @@ const feed = async (req, res) => {
     }
 }
 
-/**
- * respuesta defecto:
- * // Devolver respuesta
-    return res.status(200).send({ status: "success", message: "Ruta en pruebas" });
- * error:
-    if (error) return res.status(400).send({ status: "error", sysMessage: error.toString() });
- */
-
 // Exportar acciones
 module.exports = {
     pruebaPublication,

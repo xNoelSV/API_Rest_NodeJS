@@ -1,0 +1,23 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Musica",
+    "dateExported": "2024-02-09T12:28:22.050Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6ed96e5d-e329-4fff-89f8-4428651e0e3f",
+            "colId": "8b42b30a-1805-4ee4-a025-cd401adf23ac",
+            "containerId": "",
+            "name": "User: Register",
+            "url": "http://localhost:3900/api/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-09T11:52:58.822Z",
+            "modified": "2024-02-09T11:52:58.822Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
