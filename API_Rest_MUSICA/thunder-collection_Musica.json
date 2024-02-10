@@ -1,0 +1,426 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Musica",
+    "dateExported": "2024-02-10T23:35:23.974Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ff88dea0-72ce-42af-b047-9f51a279058c",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Prueba",
+            "url": "http://localhost:3900/api/user/prueba",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2024-02-10T21:27:32.112Z",
+            "modified": "2024-02-10T21:27:32.112Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cd46ff65-af3b-42af-8277-db46123c9150",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Register",
+            "url": "http://localhost:3900/api/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-10T10:54:53.532Z",
+            "modified": "2024-02-10T20:00:55.356Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Sofía"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Sánchez"
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xSofiaS"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    },
+                    {
+                        "name": "email",
+                        "value": "sofiasanchez@gmail.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2dd8ec9c-32d8-4dbc-9b8a-b69f97d2cd3a",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Login",
+            "url": "http://localhost:3900/api/user/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-10T20:13:30.565Z",
+            "modified": "2024-02-10T21:26:19.007Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "noelsava25@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "228bba8e-d1ec-4c41-a634-9ba6847edc94",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Profile",
+            "url": "http://localhost:3900/api/user/profile/65c7d3a5ebffeb88e404deb1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-10T21:25:25.672Z",
+            "modified": "2024-02-10T21:28:27.257Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "noelsava25@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "contraseña"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7b71ad0e-0c18-4b42-bcc1-a241c669be87",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Update",
+            "url": "http://localhost:3900/api/user/update",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-10T21:31:41.794Z",
+            "modified": "2024-02-10T21:31:41.794Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "09d1b5f7-2a3c-4a04-97c7-324542cb5e73",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Upload",
+            "url": "http://localhost:3900/api/user/upload",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-10T21:52:47.762Z",
+            "modified": "2024-02-10T21:52:47.762Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "noelsava25@gmail.com"
+                    },
+                    {
+                        "name": "nick",
+                        "value": "xNoelSV"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "32533b9c-b1f8-45d7-a67d-f497ecc260aa",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "User: Avatar",
+            "url": "http://localhost:3900/api/user/avatar/avatar-1707602888202-Screenshot_3.png",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-10T22:27:13.393Z",
+            "modified": "2024-02-10T22:27:13.393Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file0",
+                        "value": "c:\\Users\\noels\\Pictures\\Saved Pictures\\Screenshot_3.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6b4cd5da-5fbc-453e-abb8-ad72f5edc2f0",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: Save",
+            "url": "http://localhost:3900/api/artist/save",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-10T22:35:39.741Z",
+            "modified": "2024-02-10T22:53:17.776Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Guns and Roses"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Grupo de rock"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "668e2968-81b7-4bc9-bc47-c8318b82dad3",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: One",
+            "url": "http://localhost:3900/api/artist/one/65c7fae760c5c7cb1fded5df",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-02-10T22:44:11.155Z",
+            "modified": "2024-02-10T22:44:11.155Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Delafuente"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Cantante de Granada"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f9690edc-1c26-4885-a62d-8407e1cc70ee",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: List",
+            "url": "http://localhost:3900/api/artist/list/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-10T22:46:13.394Z",
+            "modified": "2024-02-10T22:46:13.394Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Delafuente"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Cantante de Granada"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7053f20e-b53b-4480-8529-1cba0275e402",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: Update",
+            "url": "http://localhost:3900/api/artist/update/65c7fae760c5c7cb1fded5df",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-02-10T22:57:56.444Z",
+            "modified": "2024-02-10T22:57:56.444Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "description",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "979f6354-f55f-4741-89f3-e15c45bfb93a",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: Delete",
+            "url": "http://localhost:3900/api/artist/remove/65c7fae760c5c7cb1fded5df",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-10T23:11:44.094Z",
+            "modified": "2024-02-10T23:11:44.094Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Metallica"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Grupo de metal"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "6f6e164d-d90a-4679-a515-9e3df9520b0f",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: Upload",
+            "url": "http://localhost:3900/api/artist/upload/65c7fb3f9139040518b3a266",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-02-10T23:33:15.397Z",
+            "modified": "2024-02-10T23:33:15.397Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file0",
+                        "value": "c:\\Users\\noels\\Pictures\\Saved Pictures\\Screenshot_3.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "409eeb6d-f785-4989-8152-804f04dafcc8",
+            "colId": "f6d8544e-4936-49ea-a369-068e4a03e1cc",
+            "containerId": "",
+            "name": "Artist: Image",
+            "url": "http://localhost:3900/api/artist/image/artist-1707607965735-Screenshot_3.png",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-02-10T23:35:17.072Z",
+            "modified": "2024-02-10T23:35:17.072Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjY1YzdkM2E1ZWJmZmViODhlNDA0ZGViMSIsIm5hbWUiOiJOb2VsIiwic3VybmFtZSI6IlNhcmnDsWVuYSIsIm5pY2siOiJ4Tm9lbFNWIiwiZW1haWwiOiJub2Vsc2F2YTI1QGdtYWlsLmNvbSIsInJvbGUiOiJyb2xlX3VzZXIiLCJpbWFnZSI6ImRlZmF1bHQucG5nIiwiaWF0IjoxNzA3NjAwMzc5LCJleHAiOjE3MTAxOTIzNzl9.vdfSmjYHGJHZuuaRH8ycU1DekRhRs9X3xJxTTxS9lqc",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

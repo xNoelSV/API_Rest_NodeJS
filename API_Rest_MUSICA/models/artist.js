@@ -6,7 +6,7 @@ const ArtistSchema = Schema({
         type: String,
         required: true
     },
-    desciption: String,
+    description: String,
     image: {
         type: String,
         default: "default.png"
