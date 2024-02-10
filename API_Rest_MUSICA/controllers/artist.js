@@ -1,8 +1,15 @@
+// Importaciones
+const Artist = require("../models/artist");
+
 // Acciones de prueba
 const prueba = (req, res) => {
     return res.status(200).send({ status: "success", message: "Mensaje eviado desde controllers/artist.js" });
 }
 
+// Acción guardar artista
+const save = (req, res) => {
+    return res.status(200).send({ status: "success", message: "Mensaje de acción guardar artista" });
+}
 
 /**
  * respuesta defecto:
@@ -14,5 +21,6 @@ const prueba = (req, res) => {
 
 // exportar acciones
 module.exports = {
-    prueba
+    prueba,
+    save
 }
