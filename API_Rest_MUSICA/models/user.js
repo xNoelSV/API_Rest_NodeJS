@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const mongoosePaginate = require("mongoose-paginate-v2");
 
-const UserSchema = Schema({
+const UserSchema = Schema ({
     name: {
         type: String,
         required: true
@@ -17,11 +17,13 @@ const UserSchema = Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        select: false
     },
     role: {
         type: String,
-        default: "role_user"
+        default: "role_user",
+        select: false
     },
     image: {
         type: String,
@@ -36,4 +38,4 @@ const UserSchema = Schema({
 // Le aplicamos la paginación
 UserSchema.plugin(mongoosePaginate);
 
-model.exports = model("User", UserSchema, "users");
+module.exports = model("User", UserSchema, "users");
