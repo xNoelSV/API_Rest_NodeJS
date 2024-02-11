@@ -1,5 +1,7 @@
 // Importaciones
 const Artist = require("../models/artist");
+const Album = require("../models/album");
+const Song = require("../models/song");
 const fs = require("fs");
 const path = require("path");
 
@@ -108,19 +110,20 @@ const remove = async (req, res) => {
 
     try {
         // Hacer consulta para buscar y eliminar el artista con un await
-        const artistRemoved = await Artist.findByIdAndDelete({ _id: artistId });
-
-        // Remove de albums
-
-        // Remove de songs
+        const artistRemoved = await Artist.findByIdAndDelete(artistId);
+        const albumsRemoved = await Album.find({ artist: artistRemoved._id });
+        albumsRemoved.forEach(async (album) => {
+            // Remove de songs
+            const songsRemoved = await Song.deleteMany({ album: { $in: album._id } }); // Remove de canciones
+        });
+        const albumsFinallyRemoved = await Album.deleteMany({ artist: artistRemoved._id });
 
         // Devolver respuesta
-        return res.status(200).send({ status: "success", message: "Método de eliminado", artist: artistRemoved });
+        return res.status(200).send({ status: "success", message: "Método de eliminado", artistRemoved});
 
     } catch (error) {
         return res.status(400).send({ status: "error", sysMessage: error.toString() });
     }
-
 }
 
 // Subir imagen de perfil 
@@ -159,10 +162,9 @@ const upload = (req, res) => {
             // Devolver respuesta
             return res.status(200).send({ status: "success", message: "Imagen subida", artistUpdated });
         })
-
-    // Devolver respuesta
-    return res.status(200).send({ status: "success", message: "Método upload", file: req.file });
-
+        .catch((error) => {
+            return res.status(400).send({ status: "error", sysMessage: error.toString() });
+        });
 }
 
 // Mostrar imagen

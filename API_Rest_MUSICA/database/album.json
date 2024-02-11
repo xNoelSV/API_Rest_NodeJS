@@ -1,0 +1,16 @@
+{
+    "_id": {
+      "$oid": "65c8d0e2503cdb9415e4f011"
+    },
+    "artist": {
+      "$oid": "65c7fb3f9139040518b3a266"
+    },
+    "title": "Recomelia",
+    "description": "Album de trap rap flamenco",
+    "year": 2019,
+    "image": "default.png",
+    "created_at": {
+      "$date": "2024-02-11T17:24:24.802Z"
+    },
+    "__v": 0
+  }

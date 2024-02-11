@@ -1,0 +1,12 @@
+{
+  "_id": {
+    "$oid": "65c7fb3f9139040518b3a266"
+  },
+  "name": "Dellafuente",
+  "description": "Trap",
+  "image": "Screenshot_3.png",
+  "created_at": {
+    "$date": "2024-02-10T22:38:31.829Z"
+  },
+  "__v": 0
+}
